@@ -1,0 +1,32 @@
+image:
+  logo: image/logo.png
+  refresh: image/refresh.png
+app:
+  version: "4.0"
+  dependence-dir: ${java.io.tmpdir}/squirrelTemp/${app.version}dependence/
+  copy-file:
+    dependence/adb.zip
+  width: 1000
+  height: 700
+  defaults-etting:
+    font:
+      name: 标楷体
+      #     Font常量
+      style: 1
+      size: 15
+    background-color:
+      r: 255
+      g: 251
+      b: 245
+#      r: 255
+#      g: 247
+#      b: 240
+#      r: 255
+#      g: 255
+#      b: 255
+logging:
+  pattern:
+    console: level-%level-%d{yyyy-MM-dd HH:mm:ss.SSS}-%class-%method  【%msg】%n
+  #    console: -%d{HH:mm:ss.SSS} %-5level %logger %class %method  %msg%n
+  level:
+    com.tools.group: info
